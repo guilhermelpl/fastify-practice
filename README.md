@@ -11,6 +11,3 @@
 
 # Comando para criar a tabela no banco de dados:
 - node src/scripts/create-table.js
-ou
-- cd src/scripts
-- node create-table.js
