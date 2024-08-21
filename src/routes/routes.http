@@ -1,0 +1,28 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "New Vídeo2",
+    "description": "This is my second vídeo and this vídeo have same duration at last vídeo",
+    "duration": 180
+}
+
+###
+
+# GET http://localhost:3333/videos?search= - paramater node serve para filtrar por vídeos que contenham, somente que for especificado
+# GET http://localhost:3333/videos  - sem parametro para pegar todos
+GET http://localhost:3333/videos
+
+###
+
+PUT http://localhost:3333/videos/3
+Content-Type: application/json
+
+{
+    "title": "New Vídeo",
+    "description": "Descrição teste",
+    "duration": 140
+}
+
+### 
+DELETE http://localhost:3333/videos/1
